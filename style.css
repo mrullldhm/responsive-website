@@ -1,0 +1,368 @@
+/* Reset margin, padding, and box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Bar Styles */
+/* Remove underline from all links */
+a {
+    text-decoration: none;
+}
+
+/* Remove bullet points from list items */
+ul {
+    list-style: none;
+}
+
+/* Prevent horizontal scrolling */
+body, html {
+    overflow-x: hidden;
+}
+
+/* Styling the navigation bar */
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+}
+
+/* Align navigation links */
+.nav_links {
+    display: flex;
+    align-items: center;
+}
+
+/* Styling individual navigation links */
+.nav_links a {
+    margin: 0 30px;
+    color: whitesmoke;
+}
+
+/* Main Page Header Styles */
+/* Set the size and background of the header */
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('img/header-bg.png');
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+/* Center and style the header content */
+.header_content {
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+/* Style the subtitle in the header */
+.header_content h2 {
+    font-size: 4vmin;
+}
+
+/* Decorative line in header and other sections */
+.line {
+    width: 150px;
+    height: 5px;
+    background: #fc036b;    
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+/* Style the main headline in the header */
+.header_content h1 {
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+/* Style the call-to-action button */
+.ctn {
+    padding: 8px 15px;
+    background: #fc036b;
+    border-radius: 10px;
+    color: whitesmoke;
+}
+
+/* Style for the menu button (hidden by default) */
+.menu_button {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Event Section Styles */
+/* General section styling */
+section {
+    width: 80%;
+    margin: 80px auto;
+}
+
+/* Style the section title */
+.tittle {
+    text-align: center;
+    font-size: 4vmin;
+    color: #49497e;
+}
+
+/* Flexbox layout for rows */
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* Flexbox layout for columns in the event section */
+.row .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Add margin to the event rows */
+.event .row {
+    margin-top: 50px;
+}
+
+/* Style the event titles */
+h4 {
+    font-size: 3vmin;
+    color: #484872;
+    margin: 20px auto;
+}
+
+/* Style the event description text */
+p {
+    color: #7c7c7c;
+    padding: 0px 40px;
+}
+
+/* Add margin to the event section's call-to-action buttons */
+.event .ctn {
+    margin-top: 30px;
+}
+
+/* Explore Section Styles */
+/* Set the background and layout of the explore section */
+.explore {
+    width: 100%;
+    height: 100vh;
+    background-image: url('img/bg2.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+/* Center and style the explore section content */
+.explore_content {
+    width: 60%;
+    padding: 50px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Style the main headline in the explore section */
+.explore_content h1 {
+    font-size: 7vmin;
+}
+
+/* Add margin to the decorative line in the explore section */
+.explore_content .line {
+    margin-bottom: 50px;
+}
+
+/* Style the paragraph text in the explore section */
+.explore_content p {
+    color: rgb(221, 221, 221);
+}
+
+/* Add margin to the call-to-action button in the explore section */
+.explore_content .ctn {
+    margin-top: 40px;
+}
+
+/* Tours Section Styles */
+/* Set the width of the content column */
+.content_column {
+    width: 40%;
+}
+
+/* Set the width of the image column */
+.image_column {
+    width: 60%;
+}
+
+/* Flexbox layout for the image gallery in the tours section */
+.tours .image_gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+
+/* Style images in the gallery */
+.image_gallery img {
+    max-width: 300px;
+    margin: 10px;
+}
+
+/* Style the headline in the content column */
+.content_column h1 {
+    font-size: 7vmin;
+    color: #484872;
+}
+
+/* Add margin to the decorative line in the content column */
+.content_column .line {
+    margin-left: -1px;
+}
+
+/* Style the paragraph text in the content column */
+.content_column p {
+    padding: 0;
+    margin: 30px auto;
+}
+
+/* Adjust the position of the call-to-action button in the content column */
+.content_column .ctn {
+    margin-left: -100px;
+}      
+
+/* Footer Section Styles */
+/* Set the background and layout of the footer */
+footer {
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0;
+    background: #484872;
+    text-align: center;
+}
+
+/* Style the text in the footer */
+footer p {
+    color: whitesmoke;
+    margin: 20px auto;
+}
+
+/* Media Query for Mobile Devices */
+/* Responsive design for screens up to 850px wide */
+@media (max-width: 850px) {
+    /* Show the menu button on mobile devices */
+    .menu_button{
+       display: block; 
+    }
+
+    /* Adjust padding for the navbar */
+    .navbar {
+        padding: 0;
+    }
+
+    /* Position the logo in the navbar */
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+
+    /* Stack the navigation links vertically and hide them initially */
+    .nav_links {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: #484872;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+
+    /* Show the mobile menu when toggled */
+    .mobile_menu {
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+    }
+
+    /* Adjust the margin for navigation list items on mobile */
+    .nav_links li {
+        margin: 30px auto;
+    }  
+
+    /* Event Section - Stack columns vertically on mobile */
+    .row {
+        flex-direction: column;
+    }
+    
+    /* Center event columns on mobile */
+    .row .column {
+        margin: 20px auto;
+    }
+
+    /* Adjust image size for event columns on mobile */
+    .column img {
+        max-width: 90%;
+    }
+
+    /* Explore Section - Adjust width on mobile */
+    .explore_content {
+        width: 100%;
+    }
+
+    /* Tours Section - Adjust column width on mobile */
+    .tours .column {
+        width: 100%;
+    }
+    
+    /* Center and adjust image gallery on mobile */
+    .image_gallery {
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Adjust image size in the gallery on mobile */
+    .image_gallery img {
+        width: 90%;
+    }
+
+    /* Footer - Adjust padding on mobile */
+    footer {
+        padding: 10px;
+    }
+}
+
+/* Animation Styles */
+/* Add transition effect to images */
+img {
+    transition: transform .3s ease;
+}
+
+/* Scale up images on hover */
+img:hover {
+    transform: scale(1.1);
+}
+
+/* Scale up list items on hover */
+li:hover {
+    transform: scale(1.1);
+}
+
+/* Scale up buttons on hover */
+.ctn:hover {
+    transform: scale(1.1);
+}

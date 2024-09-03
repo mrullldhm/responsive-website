@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding for the document -->
+    <meta charset="UTF-8">
+    <!-- Ensures the website is responsive on different devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage -->
+    <title>Adventure</title>
+    <!-- Linking the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <!-- Website Logo -->
+        <h1 class="logo">ADVENTURE</h1>
+
+        <!-- Navigation Links -->
+        <ul class="nav_links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Tour</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">About</a></li>
+            <!-- Special style for the Contact link -->
+            <li class="ctn"><a href="#">Contact</a></li>
+        </ul>
+
+        <!-- Menu button for mobile view -->
+        <img src="img/menu-btn.png" alt="" class="menu_button">
+    </nav>
+
+    <!-- Main Page Header Section -->
+    <header>
+        <!-- Main content of the header -->
+        <div class="header_content">
+            <!-- Subtitle or tagline -->
+            <h2>Explore The Colorful World</h2>
+            <!-- Decorative line under the subtitle -->
+            <div class="line"></div>
+            <!-- Main headline -->
+            <h1>A WONDERFUL GIFT</h1>
+            <!-- Call-to-action button -->
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </header>
+
+    <!-- Event Section -->
+    <section class="event">
+        <!-- Section title -->
+        <div class="tittle">
+            <h1>Upcoming Event</h1>
+            <!-- Decorative line under the title -->
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <!-- First Event -->
+            <div class="column">
+                <!-- Event image -->
+                <img src="img/img1.png" alt="">
+                <!-- Event title -->
+                <h4>Everest Camp Trek</h4>
+                <!-- Event description -->
+                <p>The Mount Everest Base Camp trek is a challenging adventure that takes you through stunning mountain landscapes to the foot of the world's highest peak</p>
+                <!-- Call-to-action button for more information -->
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+
+            <!-- Second Event -->
+            <div class="column">
+                <!-- Event image -->
+                <img src="img/img2.png" alt="">
+                <!-- Event title -->
+                <h4>Walking Holidays</h4>
+                <!-- Event description -->
+                <p>
+                    Walking holidays offer a relaxing way to explore scenic trails and connect with nature at your own pace</p>
+                <!-- Call-to-action button for more information -->
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Explore Section -->
+    <section class="explore">
+        <!-- Main content of the Explore section -->
+        <div class="explore_content">
+            <!-- Section title -->
+            <h1>EXPLORE THE WORLD</h1>
+            <!-- Decorative line under the title -->
+            <div class="line"></div>
+            <!-- Short description or introduction -->
+            <P>Exploring the world opens up endless opportunities to experience diverse cultures, landscapes, and adventures</P>
+            <!-- Call-to-action button for more information -->
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Tours Section -->
+     <section class="tours">
+        <div class="row">
+            <!-- Content column -->
+            <div class="column content_column">
+                <!-- Section title -->
+                <h1>UPCOMING TOURS & DESTINATION</h1>
+                <!-- Decorative line under the title -->
+                <div class="line"></div>
+                <!-- Short description or introduction -->
+                <P>Upcoming tours and destinations promise exciting adventures, offering new places to explore and unforgettable experiences.</P>
+                <!-- Call-to-action button for more information -->
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+
+            <!-- Image gallery column -->
+            <div class="column image_column">
+                <!-- Image gallery -->
+                <div class="image_gallery">
+                    <img src="./img/img3.png" alt="">
+                    <img src="./img/img4.png" alt="">
+                    <img src="./img/img5.png" alt="">
+                    <img src="./img/img6.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <!-- Contact information -->
+        <p>35600 Sungkai, Perak | Phone: +60 13-294 3132 | Email: mrullldhm94@gmail.com</p>
+        <!-- Copyright notice -->
+        <p>2024 Amirul Adham. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for mobile menu toggle -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Select the menu button and navigation links
+            const menuBtn = document.querySelector('.menu_button');
+            const navlinks = document.querySelector('.nav_links');
+    
+            // Toggle the mobile menu on button click
+            menuBtn.addEventListener('click', () => {
+                navlinks.classList.toggle('mobile_menu');
+            });
+        });
+    </script>    
+</body>
+</html>
